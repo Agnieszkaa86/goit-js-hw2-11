@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export async function fetchPhotos(searchedValue, page) {
+export async function fetchPhotos(name, page) {
     const params = new URLSearchParams({
         key: "28056380-7ebf030984661b6034d156d96",
-        q: searchedValue,
+        q: name,
         image_type: "photo",
         orientation: "horizontal",
         safesearch: true,

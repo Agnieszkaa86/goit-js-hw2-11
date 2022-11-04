@@ -1,9 +1,9 @@
-import './sass/index.css'
+import './sass/main.scss'
 
 import { fetchPhotos } from './fetchPhotos';
 
 import { Notify } from 'notiflix';
-import SimpleLightbox from 'simplelightbox';
+import SimpleLightbox from "simplelightbox";
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector("#search-form");
@@ -32,7 +32,7 @@ function search(event) {
 };
 
 function searchPhotos() {
-  fetchPhotos()
+  fetchPhotos(input.value, page)
     .then(photo => {
       console.log(photo);
       renderPhotos(photo.hits, photo.totalHits);
