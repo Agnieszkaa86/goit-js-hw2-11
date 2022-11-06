@@ -16,7 +16,7 @@ let remainingHits = 0;
  
 form.addEventListener("submit", search);
 loadMoreBtn.addEventListener("click", loadMore);
-loadMoreBtn.classList.add('is-not=visible');
+loadMoreBtn.classList.add('is-not-visible');
 
 function loadMore() {
     page += 1;
