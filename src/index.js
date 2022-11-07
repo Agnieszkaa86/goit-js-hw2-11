@@ -37,9 +37,9 @@ function searchPhotos() {
       console.log(photo);
       renderPhotos(photo.hits, photo.totalHits);
       if (remainingHits > 0 && remainingHits < photo.totalHits) {
-        loadBtn.classList.remove('is-not-visible');
+        loadMoreBtn.classList.remove('is-not-visible');
       } else {
-        loadBtn.classList.add('is-not-visible');
+        loadMoreBtn.classList.add('is-not-visible');
       }
     })
     .catch(error => console.log(error));
